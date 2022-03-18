@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sporting CP</title>
+    <meta name="description" content="HTML tutorial">
+    <meta name="keywords"
+    content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Rui Jesus">
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/MyStyle.css">
+</head>
+<!---Content starts here -->
+<body>
+    <header>
+    <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+        </svg>
+    </a>
+    
+    <div id="drawer">
+        <nav>
+            <a href="#unordered"> Lema do Sporting </a>
+            <a href="#ordered"> Últimas Notícias </a>
+            <a href="#color">  Posters </a>
+            <a href="#table"> Resultados da Época </a>
+            <a href="#video"> Campanha Eu Sou Leão </a>
+        </nav>
+    </div>
+
+    <br>
+    <h1>SPORTING CP</h1>
+    <p> Sporting Clube de Portugal </p>
+    <section class="slideshow-container">
+      <h2></h2>
+      <article class="mySlides" class="fade">
+        <figure>
+          <img src="EuSouLeao.jpg">
+          <figcaption></figcaption>
+          <br>
+        </figure>
+      </article>
+      <article class="mySlides" class="fade">
+        <figure>
+          <img src="sportingcampeao1.jpg">
+          <figcaption></figcaption>
+          <br>
+        </figure>
+      </article>
+      <article class="mySlides" class="fade">
+        <figure>
+          <img src="lojalojaverde1.jpg">
+          <figcaption></figcaption>
+          <br>
+        </figure>
+        </article>
+  <div class="dotpoints">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+  </div>
+  </section>
+
+  </header>
+
+<nav id="tabletPC" class="col-3">
+    <a href="#unordered"> Lema do Sporting </a>
+    <br/>
+    <a href="#ordered"> Últimas Notícias </a>
+    <br/>
+    <a href="#color"> Posters </a>
+    <br/>
+    <a href="#table"> Resultados da época </a>
+    <br>
+    <a href="#video"> Campanha Eu Sou Leão </a>
+</nav>
+
+<div id="container" class="col-9">
+<section>
+    <a name="unordered"></a>
+    <h2> Qual é o lema do Sporting CP? </h2>
+    <h3><i>What is the motto of Sporting CP?</i></h3>
+    <ul>
+        <li> Esforço </li>
+        <li> Dedicação</li>
+        <li> Devoção</li>
+        <li> Glória </li>
+    <h3> RUGE LEÃO! </h3>
+        <br>
+    </ul>
+</section>
+
+<section>
+  <a name="ordered"></a>
+  <h2> Últimas Notícias </h2>
+  <ol>
+    <p><h2> FREDERICO VARANDAS ELEITO NOVAMENTE PRESIDENTE </h2>
+            Frederico Varandas reeleito presidente do Sporting por larga maioria de 85,8% dos votos - como aconteceu. 
+            Confirmou-se afluência nas eleições do Sporting, com 12.272 votantes no Pavilhão 
+            João Rocha e um total de 14.795 votos juntando os de correspondência.
+    </p>
+    <br>  
+
+    <p><h2>SLIMANI DE VOLTA AO SPORTING! </h2>
+            Aos 33 anos, o avançado argelino volta a um clube onde esteve três temporadas,
+            com uma média de 19 golos marcados por época.
+    </p>
+    <br>
+  </ol>
+</section>
+
+<section>
+<a name="color"></a>
+<div style="text-align:center">
+    <h2>Posters</h2>
+    <p>Clique nas imagens abaixo para visualizar</p>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+        <img src="SCP (2).jpg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="futebol.jpeg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="basquetebol.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Futsal-Sporting.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Hoquei-Sporting-Porto.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+    <img src="tacadaliga.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+    <img src="europeuhoquei.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+    <img src="chamionsfutsal.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+</section>
+
+<section>
+    <a name="video"> </a>
+    <h2> EU SOU SPORTING, EU SOU LEÃO! - Sporting CP</h2>
+    <iframe width="1200" height="315" src="https://www.youtube.com/embed/vDmR7D74I20" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</section>
+
+<div>
+<section>
+<a name="table"> </a>
+<h2>Resultados da época</h2>
+
+<table>
+  <tr>
+    <th>Modalidade</th>
+    <th>Resultado</th>
+    <th>Época</th>
+  </tr>
+  <tr>
+    <td>Futebol</td>
+    <td>Campeão Nacional / Taça da Liga</td>
+    <td>2020/2021</td>
+  </tr>
+  <tr>
+    <td>Basquetebol</td>
+    <td>Campeão Nacional</td>
+    <td>2020/2021</td>
+  </tr>
+  <tr>
+    <td>Futsal</td>
+    <td>Campeão Nacional / Campeão Champions League / Taça da Liga</td>
+    <td>2020/2021</td>
+  </tr>
+  <tr>
+    <td>Hóquei</td>
+    <td>Campeão Nacional / Campeão Liga Europeia</td>
+    <td>2020/2021</td>
+  </tr>
+  </tr>
+</table>
+<br>
+</section>
+</div>
+</div>
+
+<aside class="col-2">
+  <h3>PUB</h3>
+  <p>Esta zona serve para colocar informacao menos relevante </p>
+</aside>
+   
+<footer>
+  <h2>Developed by Mafalda Figueiredo</h2>
+  </footer>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  function showSlides() {
+  let i = null;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex> slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+
+
+  let menu_icon = document.querySelector('#menu_icon');
+  let container = document.querySelector("#container");
+  let drawer = document.querySelector('#drawer');
+  menu_icon.addEventListener('click', function (e) {
+  drawer.classList.toggle('open');
+  e.stopPropagation();
+  });
+  container.addEventListener('click', function () {
+  drawer.classList.remove('open');
+  });
+  </script>
+
+</body>
+<!---Content ends here -->
+</html>
